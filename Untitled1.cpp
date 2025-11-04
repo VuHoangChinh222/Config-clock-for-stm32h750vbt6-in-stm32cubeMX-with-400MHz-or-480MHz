@@ -8,7 +8,7 @@ int main(){
 		cout<<"Select maximum clock to configure for stm32h750vbt6: [1]:400MHz; [2]:480MHz\n";
 		cout<<"Please select your choice: ";
 		cin>>choice;
-	}while(choice>1&&choice>2);
+	}while(choice<1||choice>2);
 	
 	if(choice == 1){
 		for(int i = 4; i<=48;i++){
